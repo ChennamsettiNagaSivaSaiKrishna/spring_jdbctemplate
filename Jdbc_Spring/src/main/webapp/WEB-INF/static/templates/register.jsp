@@ -50,16 +50,16 @@ body{
         #f09819
     );
     right: -30px;
-    bottom: -80px;
+    bottom: -180px;
 }
 form{
-    height: 520px;
+    height: 100%;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
     left: 50%;
+    margin-top:400px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
@@ -100,7 +100,7 @@ input{
 ::placeholder{
     color: #e5e5e5;
 }
-button{
+.button,button{
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
@@ -110,30 +110,8 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom:120px;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
-
     </style>
 </head>
 <body>
@@ -141,20 +119,27 @@ button{
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
-        <h3>Login Here</h3>
+    <form action="addUser" method="post">
+        <h3>Register Here</h3>
 
+		<label for="rollnumber">Roll Number</label>
+        <input type="text" placeholder="rollnumber" id="sroll" name="sroll">
+        
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <input type="text" placeholder="User Name" id="name" name="sname">
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
-
-        <button>Log In</button>
-        <div class="social">
-          <div class="go"><i class="fab fa-google"></i>  Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-        </div>
+        <label for="marks">Marks</label>
+        <input type="text" placeholder="Marks" id="marks" name="smarks">
+        
+        <label for="Section">Section</label>
+        <input type="text" placeholder="Section" id="section" name="ssection">
+        
+        
+        <label for="Dept">Department</label>
+        <input type="text" placeholder="Department" id="dept" name="sdept">
+        
+		<button>Login</button>
+   
     </form>
 </body>
 </html>

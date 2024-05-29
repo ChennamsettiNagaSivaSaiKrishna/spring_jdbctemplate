@@ -5,44 +5,80 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
-	
-			<dependency>
-			    <groupId>org.springframework</groupId>
-			    <artifactId>spring-webmvc</artifactId>
-			    <version>6.1.6</version>
-			</dependency>
-			
-			<dependency>
-			    <groupId>org.springframework</groupId>
-			    <artifactId>spring-web</artifactId>
-			    <version>6.1.6</version>
-			</dependency>
-			
-			<dependency>
-			    <groupId>jakarta.servlet</groupId>
-			    <artifactId>jakarta.servlet-api</artifactId>
-			    <version>6.0.0</version>
-			    <scope>provided</scope>
-			</dependency>
 
-			<dependency>
-			    <groupId>jakarta.servlet.jsp</groupId>
-			    <artifactId>jakarta.servlet.jsp-api</artifactId>
-			    <version>3.1.1</version>
-			    <scope>provided</scope>
-			</dependency>
+    <!-- Spring MVC Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>6.1.6</version>
+    </dependency>
 
-			<dependency>
-			    <groupId>jakarta.servlet.jsp.jstl</groupId>
-			    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-			    <version>3.0.0</version>
-			</dependency>
-			
-			<dependency>
-			    <groupId>org.postgresql</groupId>
-			    <artifactId>postgresql</artifactId>
-			    <version>42.7.2</version>
-			</dependency>
+    <!-- Spring Web Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>6.1.6</version>
+    </dependency>
+
+    <!-- Spring Context Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.1.6</version>
+    </dependency>
+
+    <!-- Spring Core Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>6.1.6</version>
+    </dependency>
+
+    <!-- Spring JDBC Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>6.1.6</version>
+    </dependency>
+
+    <!-- Jakarta Servlet API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Jakarta Servlet JSP API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <version>3.1.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Jakarta Servlet JSP JSTL API Dependency -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+
+    <!-- PostgreSQL JDBC Driver Dependency -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.2</version>
+    </dependency>
+    
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-jasper</artifactId>
+    <version>9.0.70</version>
+</dependency>
+
 
   </dependencies>
   <build>

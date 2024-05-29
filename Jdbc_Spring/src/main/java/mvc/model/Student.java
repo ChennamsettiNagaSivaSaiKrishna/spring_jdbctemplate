@@ -1,39 +1,44 @@
 package mvc.model;
 
 public class Student {
-	int roll;
-	String name;
-	float Marks;
-	String section;
-	String Dept;
-	public Integer getRoll() {
-		return roll;
+	private int sroll;
+	private String sname;
+	private float smarks;
+	private String ssection;
+	private String sdept;
+	
+	public Student() {
+		
 	}
-	public void setRoll(Integer roll) {
-		this.roll = roll;
+	public int getSroll() {
+		return sroll;
 	}
-	public String getName() {
-		return name;
+	public void setSroll(int sroll) {
+		this.sroll = sroll;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public String getSname() {
+		return sname;
 	}
-	public Float getMarks() {
-		return Marks;
+	public void setSname(String sname) {
+		this.sname = sname;
 	}
-	public void setMarks(Float marks) {
-		Marks = marks;
+	public float getSmarks() {
+		return smarks;
 	}
-	public String getSection() {
-		return section;
+	public void setSmarks(float smarks) {
+		this.smarks = smarks;
 	}
-	public void setSection(String section) {
-		this.section = section;
+	public String getSsection() {
+		return ssection;
 	}
-	public String getDept() {
-		return Dept;
+	public void setSsection(String ssection) {
+		this.ssection = ssection;
 	}
-	public void setDept(String dept) {
-		Dept = dept;
+	public String getSdept() {
+		return sdept;
 	}
+	public void setSdept(String sdept) {
+		this.sdept = sdept;
+	}
+	
 }

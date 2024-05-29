@@ -15,7 +15,7 @@
         base-package="mvc" />
     
  	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/static/templates" />
+		<property name="prefix" value="/WEB-INF/static/templates/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
@@ -32,19 +32,7 @@
     </bean>
 
     <!-- Example DAO bean -->
-    <bean id="DAOimpl" class="mvc.DAOImpl">
+    <bean id="DAOImpl" class="mvc.dao.DAOImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
-    </bean>
-    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <property name="host" value="smtp.gmail.com" />
-        <property name="port" value="587" />
-        <property name="username" value="yaswanthcsejntv2021@gmail.com" />
-        <property name="password" value="kawp pdfc fdvs iqap" />
-        <property name="javaMailProperties">
-            <props>
-                <prop key="mail.smtp.auth">true</prop>
-                <prop key="mail.smtp.starttls.enable">true</prop>
-            </props>
-        </property>
     </bean>
 </beans>
