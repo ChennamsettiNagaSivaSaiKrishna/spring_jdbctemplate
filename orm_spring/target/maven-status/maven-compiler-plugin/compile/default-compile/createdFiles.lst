@@ -1,0 +1,3 @@
+com\nkxgen\spring\jdbc\model\Dept.class
+com\nkxgen\spring\jdbc\dao\DeptDAO.class
+com\nkxgen\spring\jdbc\DeptController.class
